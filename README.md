@@ -12,13 +12,13 @@
 > the branch.
 
 #### Config:
->`git config pre-push.[ extension ].command="commands; commands;"`
+>`git config --add pre-push.[ extension ].command "commands; commands;"`
 >
 > examples:
 >
-> `git config pre-push.ts.command="ng build;"`
+> `git config --add pre-push.ts.command "ng build;"`
 >
-> `git config pre-push.ts.command="ng lint; ng test;"`
+> `git config --add pre-push.ts.command "ng lint; ng test;"`
 
 ## Commit message git hook `[commit-msg.py]`
 > This hook is for add the issue id part of the current branch into the commit message.

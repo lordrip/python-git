@@ -19,3 +19,7 @@
 > `git config pre-push.ts.command="ng build;"`
 >
 > `git config pre-push.ts.command="ng lint; ng test;"`
+
+## Commit message git hook `[commit-msg.py]`
+> This hook is for add the issue id part of the current branch into the commit message.
+> f.i. when you are on a branch like `bugfix/APM-123456-test-branch`, this hook will extract `bugfix/APM-123456` and add it to the commit msg.
